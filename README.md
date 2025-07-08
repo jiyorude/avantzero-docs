@@ -1,2 +1,2 @@
-# avantzero-docs
-AvantZero Documentation Front-End
+### AvantZero Docs
+Documentation Front-End for AvantZero algorithm

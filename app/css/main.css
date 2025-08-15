@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './mixins.css';
+
+@theme {
+    --font-AVZLight: "Gantari-Light";
+    --font-AVZReg: "Gantari-Regular";
+    --font-AVZIta: "Gantari-Italic";
+    --font-AVZMed: "Gantari-Medium";
+    --font-AVZSeb: "Gantari-SemiBold";
+    --font-AVZBol: "Gantari-Bold";
+    --font-AVZBla: "Gantari-Black";
+    --font-AVZMai: "Quantum";
+    --color-AVZBla: #2b2b2b;
+    --color-AVZRed: #990404;
+    --color-AVZTea: #006D77;
+    --color-AVZGre:	#9e9e8f;
+    --color-AVZWhi: #f5f5f0;
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}

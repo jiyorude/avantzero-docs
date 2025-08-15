@@ -1,23 +1,25 @@
 import React from 'react';
 import Image from 'next/image';
 import APPOVLogo from '@/public/images/APPOV_Logo.svg';
-
 import Link from 'next/link';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    t: (key: string) => string;
+}
+
+const Footer: React.FC<FooterProps> = ({ t }) => {
     const date = new Date();
     const year = date.getFullYear();
 
     return (
-        <footer className='bottom-0 fixed flex md:flex-col shadow-xl select-none'>
-            <section className='w-16 bg-AVZBla h-14 mxFlexCenter' aria-label='Container containing the A Pixelated Point of View Logo'>
+        <footer className='bottom-0 fixed flex md:flex-col select-none'>
+            <section className='w-16 bg-AVZBla h-14 mxFlexCenter' aria-label={t('APPOVLOGOARIA')}>
                 <Image
                     src={APPOVLogo}
-                    alt="A Pixelated Point of View Logo"
+                    alt={t('APPOVLOGO')}
                     priority
                     width={37}
                     height={37}
-                    className='pt-[2px]'
                     quality={100}
                 />
             </section>

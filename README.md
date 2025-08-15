@@ -33,4 +33,5 @@ Video Demo: N/A
 The source code for the AvantZero Documentation website is licensed under MIT. Please consult the LICENSE file in the repository for further information. If you are a student enrolled at CS50 or any of the other CS50-branded courses, please use the code and any other files inside of this repository for inspirational purposes only.
 
 &copy; Jordy Veenstra 2025 <br/>
-&copy; A Pixelated Point of View 2025
+&copy; A Pixelated Point of View 2025 
+

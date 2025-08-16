@@ -1,4 +1,18 @@
 {
+  "Header": {
+    "DownloadTitle": "Download the latest release on GitHub!",
+    "DownloadARIA": "Click to open the release page on GitHub: allowing you to download the latest version of the algorithm.",
+    "PyPiTitle": "Check out the project on PyPi!",
+    "PyPiARIA": "Click to open the project page on PyPi. PyPi is the official Python Package index.",
+    "RepoTitle": "Visit the GitHub Repository!",
+    "RepoARIA": "Click to visit the software repository on GitHub, in which all source code of this project can be found and downloaded.",
+    "LogoTitle": "Click to return to the homepage",
+    "LogoARIA": "Click to return to the homepage",
+    "LogoALT": "The AvantZero Logo: the letter 'a', separated towards two distinct parts near the top of the character: giving off a modern futuristic vibe. The logo is made in a modern typeset."
+  },
+  "Footer": {
+
+  },
   "HomePage": {
     "title": "Hello everyone!"
   }

@@ -6,8 +6,10 @@ import APPOVLogo from '@/public/images/APPOV_Logo.svg';
 import { IoIosSettings } from "react-icons/io";
 import { useState, useEffect } from 'react';
 import Language from '../misc/language';
+import { useTranslations } from 'next-intl';
 
 const Footer: React.FC = () => {
+    const t = useTranslations('Footer');
     const date = new Date();
     const year = date.getFullYear();
     const [settings, setSettings] = useState(false);

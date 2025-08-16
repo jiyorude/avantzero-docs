@@ -9,8 +9,8 @@ export async function setUserLocale(locale: Locale) {
   (await cookies()).set({
     name: COOKIE_NAME,
     value: locale,
-    path: '/',          // make it available everywhere
-    httpOnly: false,    // must be false if you want JS to read it in browser
+    path: '/',    
+    httpOnly: false, 
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax'
   });

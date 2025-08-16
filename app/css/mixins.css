@@ -3,3 +3,7 @@
 .mxFlexCenter {
     @apply flex justify-center items-center;
 }
+
+.mxDropShadow{
+    filter: drop-shadow(3px 3px 6px #00000052);
+}

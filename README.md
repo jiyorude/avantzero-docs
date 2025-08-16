@@ -3,8 +3,7 @@ Documentation Front-End for the AvantZero algorithm
 <br/>
 
 
-The AvantZero Docs website is part of AvantZero: a final submission <br/>
-for Harvard's CS50X (Introduction to Computer Science) course. <br/><br/>
+The AvantZero Docs website is part of AvantZero: a final submission for Harvard's CS50X (Introduction to Computer Science) course. <br/><br/>
 
 Video Demo: N/A
 

@@ -5,16 +5,20 @@ import UKFlag from '@/public/images/flags/uk_flag.svg';
 import NLFlag from '@/public/images/flags/nl_flag.svg';
 import Image from 'next/image';
 
-export default function Language() {
+interface LanguageProps {
+  onClose?: () => void;
+}
+
+export default function Language({ onClose }: LanguageProps) {
   return (
     <section className=''>
-        <form action={setUserLocale} className='*:px-3 md:pr-9 flex justify-center md:justify-end h-16 *:hover:cursor-pointer bg-transparent'>
+        <form action={async (formData: FormData) => {await setUserLocale(formData); onClose?.()}} className='flex justify-center items-center *:px-4.5 pt-6 *:hover:cursor-pointer'>
             <button type="submit" name="locale" value="en" className='fill-AVZWhi' title='Change language to English'>
                     <Image 
                         src={UKFlag}
                         alt='United Kingdom flag icon'
-                        width={30}
-                        height={30}
+                        width={40}
+                        height={40}
                         priority
                         quality={100}
                         className='mxDropShadow'
@@ -24,11 +28,11 @@ export default function Language() {
                 <Image 
                     src={NLFlag}
                     alt='Dutch flag icon'
-                    width={35}
-                    height={35}
+                    width={45}
+                    height={45}
                     priority
                     quality={100}
-                    className='bg-transparent drop-shadow-amber-500'
+                    className='mxDropShadow'
                 />
             </button>
         </form>

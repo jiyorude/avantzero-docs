@@ -5,7 +5,6 @@ import { IoLogoGithub, IoLogoPython } from 'react-icons/io';
 import { MdDownload } from 'react-icons/md';
 import AvantZeroLogo from '@/public/images/AvantZero_Logo.svg';
 
-
 const Header: React.FC = () => {
     return (
         <header className='h-20 flex md:justify-end select-none'>

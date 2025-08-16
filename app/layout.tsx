@@ -5,7 +5,6 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale} from 'next-intl/server';
-import Language from "@/components/misc/language";
 
 export const metadata: Metadata = {
     title: 'AvantZero | Experimental Quake III Machinima Algorithm',
@@ -25,7 +24,6 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             <body className="max-w-7xl flex justify-center flex-col m-auto bg-AVZWhi">
                 <NextIntlClientProvider>
                     <Header />
-                    <Language />
                         {children}
                     <Footer />
                 </NextIntlClientProvider>

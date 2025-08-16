@@ -3,27 +3,23 @@ import Image from 'next/image';
 import APPOVLogo from '@/public/images/APPOV_Logo.svg';
 import Link from 'next/link';
 
-interface FooterProps {
-    t: (key: string) => string;
-}
-
-const Footer: React.FC<FooterProps> = ({ t }) => {
+const Footer: React.FC = () => {
     const date = new Date();
     const year = date.getFullYear();
 
     return (
         <footer className='bottom-0 fixed flex md:flex-col select-none'>
-            <section className='w-16 bg-AVZBla h-14 mxFlexCenter' aria-label={t('APPOVLOGOARIA')}>
+            <section className='w-16 bg-AVZBla h-14 mxFlexCenter' aria-label='Container with the A Pixelated Point of View Logo'>
                 <Image
                     src={APPOVLogo}
-                    alt={t('APPOVLOGO')}
+                    alt='The A Pixelated Point of View Logo'
                     priority
                     width={37}
                     height={37}
                     quality={100}
                 />
             </section>
-            <button className='w-16 bg-AVZTea h-14' aria-label='Container containing a link for further information regarding the MIT-License'>
+            <button className='w-16 bg-AVZTea h-14' aria-label='Button with additional information regarding the MIT License'>
                 <Link href='https://opensource.org/license/mit' target='_blank' className='mxFlexCenter w-full h-full'>
                     <h3 className='text-AVZWhi opacity-90 font-AVZBla text-md'>MIT</h3>
                 </Link>
@@ -34,6 +30,6 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
             </section>
         </footer>
     )
-}
+};
 
 export default Footer;

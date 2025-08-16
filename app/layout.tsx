@@ -3,7 +3,9 @@ import type { ReactNode } from 'react';
 import "./css/main.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { useTranslation } from 'next-i18next';
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale} from 'next-intl/server';
+import Language from "@/components/misc/language";
 
 export const metadata: Metadata = {
     title: 'AvantZero | Experimental Quake III Machinima Algorithm',
@@ -15,15 +17,18 @@ export const metadata: Metadata = {
     },
 };
 
-export default function Layout({ children }: { children: ReactNode }) {
-    const { t } = useTranslation('common');
+export default async function RootLayout({ children }: { children: ReactNode }) {
+    const locale = await getLocale();
     
     return (
-        <html lang="en">
+        <html lang={locale}>
             <body className="max-w-7xl flex justify-center flex-col m-auto bg-AVZWhi">
-                <Header t={t} />
-                {children}
-                <Footer t={t} />
+                <NextIntlClientProvider>
+                    <Header />
+                    <Language />
+                        {children}
+                    <Footer />
+                </NextIntlClientProvider>
             </body>
         </html>
     )

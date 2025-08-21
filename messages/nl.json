@@ -1,4 +1,26 @@
 {
+  "Header": {
+    "DownloadTitle": "Download de meest recente versie op GitHub!",
+    "DownloadARIA": "Klik om naar de release pagina op GitHub te gaan. Je kunt hier de meest recente versie van het algoritme downloaden",
+    "PyPiTitle": "Bekijk het project op PyPi!",
+    "PyPiARIA": "Klik om de projectpagina op PyPi te openen. PyPi is de officiele Python Package Index",
+    "RepoTitle": "Bezoek de GitHub Repository!",
+    "RepoARIA": "Klik om de sofware repository op GitHub te bezoeken. Hier kan alle code worden bekeken en worden gedownload",
+    "LogoTitle": "Klik om terug te gaan naar de homepage",
+    "LogoARIA": "Klik om terug te gaan naar de homepage",
+    "LogoALT": "Het AvantZero Logo: deze bestaat uit de letter 'a', welke in tweeen is gesplitst aan de bovenkant. Het logo geeft een futuristische en moderne vibe en is gemaakt met een modern lettertype"
+  },
+  "Footer": {
+    "APPOVLogoARIA": "Het A Pixelated Point of View Logo",
+    "APPOVLogoALT": "Het A Pixelated Point of View Logo",
+    "LanguageThemeSettings": "Taal en thema instellingen",
+    "LanguageThemeSettingsARIA": "Klik om je thema en taal instellingen te veranderen",
+    "LanguageSettingsTitle": "Taal Instellingen",
+    "ThemeSettingsTitle": "Thema Instellingen",
+    "CopyrightARIA": "Copyright informatie en versie informatie",
+    "CloseSettings": "Instellingen sluiten",
+    "CloseSettingsARIA": "Klik om het instellingen menu te sluiten"
+  },
   "HomePage": {
     "title": "Hoi allemaal!"
   }

@@ -13,10 +13,10 @@ export default function Language({ onClose }: LanguageProps) {
   return (
     <section className=''>
         <form action={async (formData: FormData) => {await setUserLocale(formData); onClose?.()}} className='flex justify-center items-center *:px-4.5 pt-6 *:hover:cursor-pointer'>
-            <button type="submit" name="locale" value="en" className='fill-AVZWhi' title='Change language to English'>
+            <button type="submit" name="locale" value="en" className='fill-AVZWhi' title='Change language to English' aria-label='Click to change language to English'>
                     <Image 
                         src={UKFlag}
-                        alt='United Kingdom flag icon'
+                        alt='United Kingdom flag icon / Icoon met de Britse vlag'
                         width={40}
                         height={40}
                         priority
@@ -24,10 +24,10 @@ export default function Language({ onClose }: LanguageProps) {
                         className='mxDropShadow'
                     />
             </button>
-            <button type="submit" name="locale" value="nl" className='bg-transparent' title='Verander de taal naar het Nederlands'>
+            <button type="submit" name="locale" value="nl" className='bg-transparent' title='Verander de taal naar het Nederlands' aria-label='Klik om de taal naar het Nederlands te veranderen'>
                 <Image 
                     src={NLFlag}
-                    alt='Dutch flag icon'
+                    alt='Dutch flag icon / Icoon met de Nederlandse vlag'
                     width={45}
                     height={45}
                     priority

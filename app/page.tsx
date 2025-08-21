@@ -5,6 +5,11 @@ export default function Home() {
   const t = useTranslations('HomePage');
   
   return (
-    <h2>{t('title')}</h2>
+    <main className="border-3 border-red-400 mxFlexCenter">
+      <section className="mxMainGrid">
+        
+      </section>
+
+    </main>
   );
 }

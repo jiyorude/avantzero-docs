@@ -6,8 +6,8 @@ export default function Home() {
   
   return (
     <main className="border-3 border-red-400 mxFlexCenter">
-      <section className="mxMainGrid">
-        
+      <section className="mobileGrid md:mainGrid">
+
       </section>
 
     </main>

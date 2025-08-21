@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import './fonts.css';
 @import './mixins.css';
+@import './grid.css';
 
 @theme {
     --font-AVZLight: "Gantari-Light";

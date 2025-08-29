@@ -22,6 +22,24 @@
     "CloseSettingsARIA": "Click to close the settings menu"
   },
   "HomePage": {
-    "title": "Hello everyone!"
+    "LogoARIA": "The white AvantZero logo on a black background",
+    "QuickstartHeader": "QUICKSTART",
+    "QuickstartTitle": "Concise information on getting the algorithm up and running quick!",
+    "QuickstartARIA": "Click the button to go to the quickstart page, containing information if you want to get the algorithm up and running fast!",
+    "BackgroundHeader": "BACKGROUND",
+    "BackgroundTitle": "Details on the origin and purpose of the algorithm",
+    "BackgroundARIA": "Click the button to go to the Background page, it contains information on the origin and purpose of the algorithm.",
+    "RequirementsHeader": "REQUIREMENTS",
+    "RequirementsTitle": "List of required software to run the algorithm properly",
+    "RequirementsARIA": "Click on the button to go to the Requirements page, which contains a list of software and hardware requirements to run the AvantZero algorithm properly.",
+    "InstallationHeader": "INSTALLATION",
+    "InstallationTitle": "Step by step instructions on how to install the AvantZero algorithm",
+    "InstallationARIA": "Clicking on the button will open the Installation page, which contains step by step instructions on how to install the AvantZero algorithm",
+    "ProjectManagerHeader": "PROJECT MANAGER",
+    "ProjectManagerTitle": "In-depth information regarding the Project Manager Core",
+    "ProjectManagerARIA": "Clicking this button opens the Project Manager page. This page contains in-depth and technical information behind the Project Manager used within the AvantZero algorithm.",
+    "LicenseCreditsHeader": "LICENSE & CREDITS",
+    "LicenseCreditsTitle": "List of "
+
   }
 }

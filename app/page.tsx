@@ -1,112 +1,123 @@
 import React from "react";
 import { useTranslations } from 'next-intl';
 import GridBlock from "@/components/grid/gridblock";
+import AvantZeroLogo from '@/public/images/AvantZero_Logo.svg';
+import Image from 'next/image';
 
 export default function Home() {
   const t = useTranslations('HomePage');
-  
   return (
-    <main className="mxFlexCenter mt-10 overflow-scroll">
-      <section className="grid grid-cols-4 gap-3 auto-rows-[200px] w-full">
-        <aside className="col-span-2 row-span-2">
+    <main className="mxFlexCenter h-screen pt-20 max-w-[1400px]">
+      <section className="grid grid-cols-4 gap-4 auto-rows-[170px] w-full ml-22">
+        <aside className="col-span-1 row-span-2">
           <GridBlock
-            header="Quickstart"
-            backgroundColor="Red"
+            header=""
+            icon={
+              <Image
+                src={AvantZeroLogo}
+                alt="Avant Zero Logo"
+                width={130}
+                height={130} 
+              />
+            }
+            backgroundColor="Black"
             textColor="White"
-            linkTo="/"
-            textFont="Bold"
-            textSize="3XL"
+            linkTo=""
+            textFont="Logo"
+            textSize="9XL"
+            title=""
+            ariaTitle={t('LogoARIA')}
+          />
+        </aside>
+          <GridBlock
+            header={t('QuickstartHeader')}
+            backgroundColor="Teal"
+            textColor="White"
+            linkTo="/quickstart"
+            textFont="Light"
+            textSize="2XL"
+            title={t('QuickstartTitle')}
+            ariaTitle={t('QuickstartARIA')}
+          />
+        <GridBlock
+          header={t('BackgroundHeader')}
+          backgroundColor="ShadeOne"
+          textColor="White"
+          linkTo="/background"
+          textFont="Light"
+          textSize="2XL"
+          title={t('BackgroundTitle')}
+          ariaTitle={t('BackgroundARIA')}
+        />
+        <GridBlock
+          header={t('RequirementsHeader')}
+          backgroundColor="ShadeThree"
+          textColor="White"
+          linkTo="/requirements"
+          textFont="Light"
+          textSize="2XL"
+          title={t('RequirementsTitle')}
+          ariaTitle={t('RequirementsARIA')}
+        />
+        <GridBlock
+          header={t('InstallationHeader')}
+          backgroundColor="ShadeFour"
+          textColor="White"
+          linkTo="/installation"
+          textFont="Light"
+          textSize="2XL"
+          title={t('InstallationTitle')}
+          ariaTitle={t('InstallationARIA')}
+        />
+        <GridBlock
+          header={t('ProjectManagerHeader')}
+          backgroundColor="ShadeFive"
+          textColor="White"
+          linkTo="/projectmanager"
+          textFont="Light"
+          textSize="2XL"
+          title={t('ProjectManagerTitle')}
+          ariaTitle={t('ProjectManagerARIA')}
+        />
+        <section className="col-span-1 row-span-2">
+          <GridBlock
+            header={t('LicenseCreditsHeader')}
+            backgroundColor="ShadeSix"
+            textColor="White"
+            linkTo="/licensecredits"
+            textFont="Light"
+            textSize="2XL"
             title="Hey there"
             ariaTitle="This is a aria title"
           />
-        </aside>
+        </section>
         <GridBlock
-          header="Background"
-          backgroundColor="Red"
+          header="DATA GENERATOR"
+          backgroundColor="ShadeFive"
           textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
+          linkTo="/datagenerator"
+          textFont="Light"
+          textSize="2XL"
           title="Hey there"
           ariaTitle="This is a aria title"
         />
         <GridBlock
-          header="Requirements"
-          backgroundColor="Red"
+          header="DEPTH GENERATOR"
+          backgroundColor="ShadeThree"
           textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
+          linkTo="/depthgenerator"
+          textFont="Light"
+          textSize="2XL"
           title="Hey there"
           ariaTitle="This is a aria title"
         />
         <GridBlock
-          header="Installation"
-          backgroundColor="Red"
+          header="ERROR DATABASE"
+          backgroundColor="ShadeOne"
           textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="Project Manager"
-          backgroundColor="Red"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="Data Generator"
-          backgroundColor="Red"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="Depth Generator"
-          backgroundColor="Red"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="Error Database"
-          backgroundColor="Red"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="License"
-          backgroundColor="Black"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
-        />
-        <GridBlock
-          header="Credits"
-          backgroundColor="Teal"
-          textColor="White"
-          linkTo="/"
-          textFont="Bold"
-          textSize="3XL"
+          linkTo="/errors"
+          textFont="Light"
+          textSize="2XL"
           title="Hey there"
           ariaTitle="This is a aria title"
         />

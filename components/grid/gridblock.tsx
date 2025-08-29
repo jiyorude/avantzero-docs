@@ -4,10 +4,10 @@ import Link from 'next/link';
 interface GridBlockProps {
     icon?: ReactElement;
     header: string;
-    backgroundColor: 'Red' | 'Teal' | 'Black' | 'Grey';
+    backgroundColor: 'Red' | 'Teal' | 'Black' | 'Grey' | 'White' | 'ShadeOne' | 'ShadeTwo' | 'ShadeThree' | 'ShadeFour' | 'ShadeFive' | 'ShadeSix';
     textColor: 'White' | 'Teal' | 'Red' | 'Black';
     textFont: 'Light' | 'Regular' | 'Medium' | 'Semibold' | 'Bold' | 'Black' | 'Logo';
-    textSize: 'S' | 'M' | 'L' | 'XL' | '2XL' | '3XL' | '4XL' | '5XL';
+    textSize: 'S' | 'M' | 'L' | 'XL' | '2XL' | '3XL' | '4XL' | '5XL' | '6XL' | '9XL';
     backgroundImage?: ReactElement;
     linkTo: string;
     title: string;
@@ -22,6 +22,22 @@ const handleBackgroundColor = (choice: GridBlockProps['backgroundColor']) => {
             return 'bg-AVZTea';
         case 'Black':
             return 'bg-AVZBla';
+        case 'Grey':
+            return 'bg-AVZGre';
+        case 'White':
+            return 'bg-AVZWhi';
+        case 'ShadeOne':
+            return 'bg-AVZSh1';
+        case 'ShadeTwo':
+            return 'bg-AVZSh2';
+        case 'ShadeThree':
+            return 'bg-AVZSh3';
+        case 'ShadeFour':
+            return 'bg-AVZSh4';
+        case 'ShadeFive':
+            return 'bg-AVZSh5';
+        case 'ShadeSix':
+            return 'bg-AVZSh6';
         default:
             return 'bg-AVZTea';
     };
@@ -81,6 +97,10 @@ const handleTextSize = (choice: GridBlockProps['textSize']) => {
             return 'text-4xl';
         case '5XL':
             return 'text-5xl';
+        case '6XL':
+            return 'text-6xl';
+        case '9XL':
+            return 'text-9xl';
     };
 };
 
@@ -92,15 +112,15 @@ const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, te
 
     return (
         <Link href={linkTo} passHref>
-            <button className={`w-full h-full mxFlexCenter flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} hover:cursor-pointer`} title={title} aria-label={ariaTitle}>
+            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} hover:cursor-pointer p-6`} title={title} aria-label={ariaTitle}>
                 {backgroundImage && (
                     <section className='absolute inset-0 z-0 opacity-20'>
                         {backgroundImage}
                     </section>
                 )}
-                <section className='z-10 flex flex-col items-center gap-2 p-4'>
+                <section className='z-10 flex flex-col justify-center items-center'>
                     {icon && <figure className='text-4xl'>{icon}</figure>}
-                    <h2 className={`${txtFont} ${txtSize}`}>{header}</h2>
+                    <h2 className={`${txtFont} ${txtSize} tracking-[3px]`}>{header}</h2>
                 </section>
             </button>
         </Link>

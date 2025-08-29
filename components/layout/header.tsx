@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 const Header: React.FC = () => {
     const t = useTranslations('Header');
     return (
-        <header className='h-20 flex md:justify-end select-none'>
+        <header className='h-20 flex md:justify-end select-none fixed w-full top-0 mx-auto max-w-7xl z-1'>
             <section className='shadow-xl flex md:justify-end w-full md:w-fit'>
                 <button className='bg-AVZWhi w-1/5 md:w-28 h-full hover:cursor-pointer' title={t('DownloadTitle')} aria-label={t('DownloadARIA')}>
                     <Link href='https://github.com/jiyorude/avantzero/releases' target='_blank' className='mxFlexCenter h-full w-full'>

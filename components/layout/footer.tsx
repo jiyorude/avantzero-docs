@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
 
     return (
         <>
-        <footer className='bottom-0 fixed flex md:flex-col select-none'>
+        <footer className='bottom-0 fixed z-9999 flex md:flex-col shadow-4xl select-none'>
             <section className='w-16 bg-AVZBla h-14 mxFlexCenter' aria-label={t('APPOVLogoARIA')}>
                 <Image
                     src={APPOVLogo}

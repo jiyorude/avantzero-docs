@@ -112,7 +112,7 @@ const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, te
 
     return (
         <Link href={linkTo} passHref>
-            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} hover:cursor-pointer p-6`} title={title} aria-label={ariaTitle}>
+            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} hover:cursor-pointer p-6`} title={title} aria-label={ariaTitle} tabIndex={1}>
                 {backgroundImage && (
                     <section className='absolute inset-0 z-0 opacity-20'>
                         {backgroundImage}

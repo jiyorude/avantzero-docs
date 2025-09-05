@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                     quality={100}
                 />
             </section>
-            <button onClick={() => setSettings(true)} className='w-16 bg-AVZTea h-14  flex justify-center items-center hover:cursor-pointer' title={t('LanguageThemeSettings')} aria-label={t('LanguageThemeSettingsARIA')}>
+            <button onClick={() => setSettings(true)} className='w-16 bg-AVZTea h-14  flex justify-center items-center hover:cursor-pointer' title={t('LanguageThemeSettings')} aria-label={t('LanguageThemeSettingsARIA')} tabIndex={1}>
                 <IoIosSettings size={45} className='fill-AVZWhi bg-transparent size-9 opacity-90' />
             </button>
             <section className='w-16 bg-AVZRed h-14 mxFlexCenter flex-col leading-3.5 ' aria-label={t('CopyrightARIA')}>

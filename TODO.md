@@ -1,8 +1,7 @@
-* Black shades background Grid
+* Black shades background Grid, make layout better
 * Video backgorund
 * Image background
 * Animations
-* tabindexes grid
 * responsivity
 * dark theme
 * check a11y

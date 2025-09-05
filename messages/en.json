@@ -39,7 +39,16 @@
     "ProjectManagerTitle": "In-depth information regarding the Project Manager Core",
     "ProjectManagerARIA": "Clicking this button opens the Project Manager page. This page contains in-depth and technical information behind the Project Manager used within the AvantZero algorithm.",
     "LicenseCreditsHeader": "LICENSE & CREDITS",
-    "LicenseCreditsTitle": "List of "
-
+    "LicenseCreditsTitle": "List of external software used and license information",
+    "LicenseCreditsARIA": "Clicking this button opens a list of external software implemented in the algorithm and information regarding the project's license",
+    "DataGeneratorHeader": "DATA GENERATOR",
+    "DataGeneratorTitle": "Further information regarding the Data Generator Core",
+    "DataGeneratorARIA": "Clicking this button opens the Data Generator section, containing more in-depth information regarding the Data Generator Core",
+    "DepthGeneratorHeader": "DEPTH GENERATOR",
+    "DepthGeneratorTitle": "Technical documentation about the Depth Generator Core",
+    "DepthGeneratorARIA": "Click this button to open the technical documentation about the Depth Generator Core",
+    "ErrorDBHeader": "ERROR DATABASE",
+    "ErrorDBTitle": "Database with common errors and steps on how to fix them",
+    "ErrorDBARIA": "Click this button to see a database of common errors and step by step information on how to fix them"
   }
 }

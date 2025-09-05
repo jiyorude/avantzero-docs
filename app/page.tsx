@@ -31,7 +31,7 @@ export default function Home() {
         </aside>
           <GridBlock
             header={t('QuickstartHeader')}
-            backgroundColor="Teal"
+            backgroundColor="ShadeOne"
             textColor="White"
             linkTo="/quickstart"
             textFont="Light"
@@ -41,7 +41,7 @@ export default function Home() {
           />
         <GridBlock
           header={t('BackgroundHeader')}
-          backgroundColor="ShadeOne"
+          backgroundColor="ShadeTwo"
           textColor="White"
           linkTo="/background"
           textFont="Light"
@@ -87,39 +87,39 @@ export default function Home() {
             linkTo="/licensecredits"
             textFont="Light"
             textSize="2XL"
-            title="Hey there"
-            ariaTitle="This is a aria title"
+            title={t('LicenseCreditsTitle')}
+            ariaTitle={t('LicenseCreditsARIA')}
           />
         </section>
         <GridBlock
-          header="DATA GENERATOR"
+          header={t('DataGeneratorHeader')}
           backgroundColor="ShadeFive"
           textColor="White"
           linkTo="/datagenerator"
           textFont="Light"
           textSize="2XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
+          title={t('DataGeneratorTitle')}
+          ariaTitle={t('DataGeneratorARIA')}
         />
         <GridBlock
-          header="DEPTH GENERATOR"
+          header={t('DepthGeneratorHeader')}
           backgroundColor="ShadeThree"
           textColor="White"
           linkTo="/depthgenerator"
           textFont="Light"
           textSize="2XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
+          title={t('DepthGeneratorTitle')}
+          ariaTitle={t('DepthGeneratorARIA')}
         />
         <GridBlock
-          header="ERROR DATABASE"
-          backgroundColor="ShadeOne"
+          header={t('ErrorDBHeader')}
+          backgroundColor="ShadeTwo"
           textColor="White"
           linkTo="/errors"
           textFont="Light"
           textSize="2XL"
-          title="Hey there"
-          ariaTitle="This is a aria title"
+          title={t('ErrorDBTitle')}
+          ariaTitle={t('ErrorDBARIA')}
         />
       </section>
     </main>

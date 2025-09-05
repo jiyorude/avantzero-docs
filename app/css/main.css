@@ -16,12 +16,12 @@
     --color-AVZTea: #006D77;
     --color-AVZGre:	#9e9e8f;
     --color-AVZWhi: #f5f5f0;
-    --color-AVZSh1: #33848B;
-    --color-AVZSh2: #07CEE0;
-    --color-AVZSh3: #335D61;
+    --color-AVZSh1: #595959;
+    --color-AVZSh2: #828282;
+    --color-AVZSh3: #ABABAB;
     --color-AVZSh4: #263536;
-    --color-AVZSh5: #3A6D8B;
-    --color-AVZSh6: #1E5778;
+    --color-AVZSh5: #d4d4d4;
+    --color-AVZSh6: #6e6e6e;
 }
 
 @layer base {

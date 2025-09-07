@@ -1,5 +1,8 @@
-import React, { ReactElement } from 'react';
+"use client";
+import React, { ReactElement, useMemo } from 'react';
 import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
+
 
 interface GridBlockProps {
     icon?: ReactElement;
@@ -8,11 +11,13 @@ interface GridBlockProps {
     textColor: 'White' | 'Teal' | 'Red' | 'Black';
     textFont: 'Light' | 'Regular' | 'Medium' | 'Semibold' | 'Bold' | 'Black' | 'Logo';
     textSize: 'S' | 'M' | 'L' | 'XL' | '2XL' | '3XL' | '4XL' | '5XL' | '6XL' | '9XL';
-    backgroundImage?: ReactElement;
+    backgroundImage?: StaticImageData;
     linkTo: string;
     title: string;
     ariaTitle: string;
+    hasHover?: boolean;
 }
+
 
 const handleBackgroundColor = (choice: GridBlockProps['backgroundColor']) => {
     switch(choice) {
@@ -104,7 +109,7 @@ const handleTextSize = (choice: GridBlockProps['textSize']) => {
     };
 };
 
-const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, textColor, textFont, textSize, backgroundImage, linkTo, title, ariaTitle }) => {
+const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, textColor, textFont, textSize, backgroundImage, hasHover = true, linkTo, title, ariaTitle }) => {
     const backColor = handleBackgroundColor(backgroundColor);
     const txtColor = handleTextColor(textColor);
     const txtFont = handleTextFont(textFont);
@@ -112,11 +117,16 @@ const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, te
 
     return (
         <Link href={linkTo} passHref>
-            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} hover:cursor-pointer p-6`} title={title} aria-label={ariaTitle} tabIndex={1}>
+            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} ${hasHover ? "hover:cursor-pointer" : ""}  p-6`} title={title} aria-label={ariaTitle} tabIndex={1}>
                 {backgroundImage && (
-                    <section className='absolute inset-0 z-0 opacity-20'>
-                        {backgroundImage}
-                    </section>
+                    <Image 
+                        src={backgroundImage}
+                        alt=""
+                        fill
+                        priority
+                        className='absolute inset z-0 opacity-30'
+                        style={{ objectFit: 'cover' }}
+                    />
                 )}
                 <section className='z-10 flex flex-col justify-center items-center'>
                     {icon && <figure className='text-4xl'>{icon}</figure>}

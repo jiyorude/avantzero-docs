@@ -1,6 +1,4 @@
-* Black shades background Grid, make layout better
 * Video backgorund
-* Image background
 * Animations
 * responsivity
 * dark theme

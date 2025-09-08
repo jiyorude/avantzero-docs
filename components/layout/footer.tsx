@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         <AnimatePresence>
         {settings && (
             <motion.aside 
-                className="fixed inset-0 bg-black/30 backdrop-blur-[10px] flex justify-center items-center z-50" 
+                className="fixed inset-0 bg-black/30 backdrop-blur-[10px] flex justify-center items-center z-1000" 
                 onClick={() => setSettings(false)}
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}

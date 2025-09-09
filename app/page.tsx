@@ -15,8 +15,8 @@ import Grid009 from '@/public/images/grids/grid_009.jpg';
 export default function Home() {
   const t = useTranslations('HomePage');
   return (
-    <main className="flex lg:items-center lg:justify-center h-full max-w-[1400px]">
-      <section className="grid md:grid-cols-2 xl:grid-cols-4 xl:pt-30 gap-5 auto-rows-[170px] w-full mt-6 py-20 md:py-30 lg:py-0 px-10 md:px-22 xl:px-0 xl:ml-22">
+    <main className="flex xl:items-center xl:justify-center h-full max-w-[1400px]">
+      <section className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 auto-rows-[170px] w-full mt-6 md:mt-4 xl:mt-26 py-20 md:py-15 xl:py-10 px-10 md:px-22 xl:px-0 xl:ml-22">
         <aside className="md:row-span-2 xl:row-span-2">
           <GridBlock
             header={t('QuickstartHeader')}

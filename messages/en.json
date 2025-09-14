@@ -22,7 +22,6 @@
     "CloseSettingsARIA": "Click to close the settings menu"
   },
   "HomePage": {
-    "LogoARIA": "The white AvantZero logo on a black background",
     "QuickstartHeader": "QUICKSTART",
     "QuickstartTitle": "Concise information on getting the algorithm up and running quick!",
     "QuickstartARIA": "Click the button to go to the quickstart page, containing information if you want to get the algorithm up and running fast!",

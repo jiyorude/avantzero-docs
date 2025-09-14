@@ -1,8 +1,6 @@
 import React from "react";
 import { useTranslations } from 'next-intl';
 import GridBlock from "@/components/grid/gridblock";
-import AvantZeroLogo from '@/public/images/AvantZero_Logo.svg';
-import Image from 'next/image';
 import Grid001 from '@/public/images/grids/grid_001.jpg';
 import Grid002 from '@/public/images/grids/grid_002.jpg';
 import Grid003 from '@/public/images/grids/grid_003.jpg';
@@ -13,33 +11,13 @@ import Grid007 from '@/public/images/grids/grid_007.jpg';
 import Grid008 from '@/public/images/grids/grid_008.jpg';
 import Grid009 from '@/public/images/grids/grid_009.jpg';
 
-
 export default function Home() {
   const t = useTranslations('HomePage');
+
   return (
-    <main className="mxFlexCenter h-screen pt-20 max-w-[1400px]">
-      <section className="grid grid-cols-4 gap-4 auto-rows-[170px] w-full py-10 ml-22">
-        <aside className="col-span-1 row-span-2">
-          <GridBlock
-            header=""
-            icon={
-              <Image
-                src={AvantZeroLogo}
-                alt="Avant Zero Logo"
-                width={130}
-                height={130} 
-              />
-            }
-            backgroundColor="Black"
-            textColor="White"
-            linkTo=""
-            hasHover={false}
-            textFont="Logo"
-            textSize="9XL"
-            title=""
-            ariaTitle={t('LogoARIA')}
-          />
-        </aside>
+    <main className="mx-6 md:mx-auto max-w-[1400px] h-full pt-24 md:pt-28 pb-20 md:pb-8">
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-[170px] gap-4 h-full sm:ml-0 xl:ml-24">
+        <aside className="md:col-span-1 md:row-span-2">
           <GridBlock
             header={t('QuickstartHeader')}
             backgroundColor="ShadeOne"
@@ -50,7 +28,8 @@ export default function Home() {
             textSize="2XL"
             title={t('QuickstartTitle')}
             ariaTitle={t('QuickstartARIA')}
-          />
+          />          
+        </aside>
         <GridBlock
           header={t('BackgroundHeader')}
           backgroundColor="ShadeTwo"
@@ -65,8 +44,8 @@ export default function Home() {
         <GridBlock
           header={t('RequirementsHeader')}
           backgroundColor="ShadeThree"
-          textColor="White"
           backgroundImage={Grid003}
+          textColor="White"
           linkTo="/requirements"
           textFont="Light"
           textSize="2XL"
@@ -76,8 +55,8 @@ export default function Home() {
         <GridBlock
           header={t('InstallationHeader')}
           backgroundColor="ShadeFour"
-          textColor="White"
           backgroundImage={Grid004}
+          textColor="White"
           linkTo="/installation"
           textFont="Light"
           textSize="2XL"
@@ -87,20 +66,31 @@ export default function Home() {
         <GridBlock
           header={t('ProjectManagerHeader')}
           backgroundColor="ShadeOne"
-          textColor="White"
           backgroundImage={Grid005}
+          textColor="White"
           linkTo="/projectmanager"
           textFont="Light"
           textSize="2XL"
           title={t('ProjectManagerTitle')}
           ariaTitle={t('ProjectManagerARIA')}
         />
-        <section className="col-span-1 row-span-2">
+        <GridBlock
+          header={t('DataGeneratorHeader')}
+          backgroundColor="ShadeThree"
+          backgroundImage={Grid007}
+          textColor="White"
+          linkTo="/datagenerator"
+          textFont="Light"
+          textSize="2XL"
+          title={t('DataGeneratorTitle')}
+          ariaTitle={t('DataGeneratorARIA')}
+        />
+        <section className="md:col-span-1 md:row-span-2">
           <GridBlock
             header={t('LicenseCreditsHeader')}
             backgroundColor="ShadeTwo"
-            textColor="White"
             backgroundImage={Grid006}
+            textColor="White"
             linkTo="/licensecredits"
             textFont="Light"
             textSize="2XL"
@@ -109,39 +99,31 @@ export default function Home() {
           />
         </section>
         <GridBlock
-          header={t('DataGeneratorHeader')}
-          backgroundColor="ShadeThree"
-          textColor="White"
-          backgroundImage={Grid007}
-          linkTo="/datagenerator"
-          textFont="Light"
-          textSize="2XL"
-          title={t('DataGeneratorTitle')}
-          ariaTitle={t('DataGeneratorARIA')}
-        />
-        <GridBlock
           header={t('DepthGeneratorHeader')}
           backgroundColor="ShadeFour"
+          backgroundImage={Grid008}
           textColor="White"
           linkTo="/depthgenerator"
-          backgroundImage={Grid008}
           textFont="Light"
           textSize="2XL"
           title={t('DepthGeneratorTitle')}
           ariaTitle={t('DepthGeneratorARIA')}
         />
+        <section className="md:row-span-1 md:col-span-2">
         <GridBlock
           header={t('ErrorDBHeader')}
           backgroundColor="ShadeOne"
+          backgroundImage={Grid009}
           textColor="White"
           linkTo="/errors"
-          backgroundImage={Grid009}
           textFont="Light"
           textSize="2XL"
           title={t('ErrorDBTitle')}
           ariaTitle={t('ErrorDBARIA')}
         />
+        </section>
+        
       </section>
     </main>
-  )
+  );
 }

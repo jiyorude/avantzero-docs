@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactElement, useMemo } from 'react';
+import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
@@ -16,6 +16,7 @@ interface GridBlockProps {
     title: string;
     ariaTitle: string;
     hasHover?: boolean;
+    tabIndex?: 0;
 }
 
 
@@ -109,15 +110,15 @@ const handleTextSize = (choice: GridBlockProps['textSize']) => {
     };
 };
 
-const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, textColor, textFont, textSize, backgroundImage, hasHover = true, linkTo, title, ariaTitle }) => {
+const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, textColor, textFont, textSize, backgroundImage, hasHover = true, linkTo, title, ariaTitle, tabIndex }) => {
     const backColor = handleBackgroundColor(backgroundColor);
     const txtColor = handleTextColor(textColor);
     const txtFont = handleTextFont(textFont);
     const txtSize = handleTextSize(textSize);
 
     return (
-        <Link href={linkTo} passHref>
-            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} ${hasHover ? "hover:cursor-pointer" : ""}  p-6`} title={title} aria-label={ariaTitle} tabIndex={1}>
+        <Link href={linkTo} passHref tabIndex={tabIndex}>
+            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} ${hasHover ? "hover:cursor-pointer" : ""}  p-6`} title={title} aria-label={ariaTitle} tabIndex={-1}>
                 {backgroundImage && (
                     <Image 
                         src={backgroundImage}

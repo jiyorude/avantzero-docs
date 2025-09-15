@@ -2,7 +2,9 @@ import {NextConfig} from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
  
 const nextConfig: NextConfig = {
-  
+    images: {
+        qualities: [25, 50, 75, 100],
+    },
 };
  
 const withNextIntl = createNextIntlPlugin();

@@ -28,6 +28,7 @@ export default function Home() {
             textSize="2XL"
             title={t('QuickstartTitle')}
             ariaTitle={t('QuickstartARIA')}
+            tabIndex={0}
           />          
         </aside>
         <GridBlock
@@ -40,6 +41,7 @@ export default function Home() {
           textSize="2XL"
           title={t('BackgroundTitle')}
           ariaTitle={t('BackgroundARIA')}
+          tabIndex={0}
         />
         <GridBlock
           header={t('RequirementsHeader')}
@@ -51,6 +53,7 @@ export default function Home() {
           textSize="2XL"
           title={t('RequirementsTitle')}
           ariaTitle={t('RequirementsARIA')}
+          tabIndex={0}
         />
         <GridBlock
           header={t('InstallationHeader')}
@@ -62,6 +65,7 @@ export default function Home() {
           textSize="2XL"
           title={t('InstallationTitle')}
           ariaTitle={t('InstallationARIA')}
+          tabIndex={0}
         />
         <GridBlock
           header={t('ProjectManagerHeader')}
@@ -73,6 +77,7 @@ export default function Home() {
           textSize="2XL"
           title={t('ProjectManagerTitle')}
           ariaTitle={t('ProjectManagerARIA')}
+          tabIndex={0}
         />
         <GridBlock
           header={t('DataGeneratorHeader')}
@@ -84,6 +89,7 @@ export default function Home() {
           textSize="2XL"
           title={t('DataGeneratorTitle')}
           ariaTitle={t('DataGeneratorARIA')}
+          tabIndex={0}
         />
         <section className="md:col-span-1 md:row-span-2">
           <GridBlock
@@ -96,6 +102,7 @@ export default function Home() {
             textSize="2XL"
             title={t('LicenseCreditsTitle')}
             ariaTitle={t('LicenseCreditsARIA')}
+            tabIndex={0}
           />
         </section>
         <GridBlock
@@ -108,6 +115,7 @@ export default function Home() {
           textSize="2XL"
           title={t('DepthGeneratorTitle')}
           ariaTitle={t('DepthGeneratorARIA')}
+          tabIndex={0}
         />
         <section className="md:row-span-1 md:col-span-2">
         <GridBlock
@@ -120,9 +128,10 @@ export default function Home() {
           textSize="2XL"
           title={t('ErrorDBTitle')}
           ariaTitle={t('ErrorDBARIA')}
+          tabIndex={0}
         />
         </section>
-        
+      
       </section>
     </main>
   );

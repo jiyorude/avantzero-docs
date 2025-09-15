@@ -131,7 +131,6 @@ export default function Home() {
           tabIndex={0}
         />
         </section>
-      
       </section>
     </main>
   );

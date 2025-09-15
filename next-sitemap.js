@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://www.avantzero-docs.vercel.app',
+    siteUrl: 'https://avantzero-docs.vercel.app',
     generateRobotsTxt: true,
     changefreq: 'weekly',
     priority: 0.7,

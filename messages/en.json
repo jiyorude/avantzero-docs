@@ -21,6 +21,18 @@
     "CloseSettings": "Close the settings menu",
     "CloseSettingsARIA": "Click to close the settings menu"
   },
+  "Tabs": {
+    "MainHeaderTab": "Experimental Quake III Machinima Algorithm",
+    "BackgroundTab": "Background",
+    "DataGeneratorTab": "Data Generator",
+    "DepthGeneratorTab": "Depth Generator",
+    "ErrorTab": "Error Database",
+    "InstallationTab": "Installation",
+    "LicenseTab": "License & Credits",
+    "ProjectManagerTab": "Project Manager",
+    "QuickstartTab": "Quickstart",
+    "RequirementsTab": "Requirements"
+  },
   "HomePage": {
     "QuickstartHeader": "QUICKSTART",
     "QuickstartTitle": "Concise information on getting the algorithm up and running quick!",
@@ -49,5 +61,41 @@
     "ErrorDBHeader": "ERROR DATABASE",
     "ErrorDBTitle": "Database with common errors and steps on how to fix them",
     "ErrorDBARIA": "Click this button to see a database of common errors and step by step information on how to fix them"
+  },
+  "BackgroundPage": 
+  {
+    "BGTitle": "Background Page"
+  },
+  "DataGeneratorPage":
+  {
+    "DGTitle": "Data Generator Page"
+  },
+  "DepthGeneratorPage":
+  {
+    "DPTitle": "Depth Generator Page"
+  },
+  "ErrorDatabasePage":
+  {
+    "EDTitle": "Error Database Page"
+  },
+  "InstallationPage":
+  {
+    "ISTitle": "Installation Page"
+  },
+  "LicenseCreditsPage":
+  {
+    "LCTitle": "License and Credits Page"
+  },
+  "ProjectManagerPage":
+  {
+    "PMTitle": "Project Manager Page"
+  },
+  "QuickstartPage":
+  {
+    "QSTitle": "Quickstart Page"
+  },
+  "RequirementsPage":
+  {
+    "RQTitle": "Requirements Page"
   }
 }

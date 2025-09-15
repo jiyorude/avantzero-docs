@@ -21,6 +21,18 @@
     "CloseSettings": "Instellingen sluiten",
     "CloseSettingsARIA": "Klik om het instellingen menu te sluiten"
   },
+  "Tabs": {
+    "MainHeaderTab": "Experimenteel Quake III Machinima Algoritme",
+    "BackgroundTab": "Achtergrond",
+    "DataGeneratorTab": "Data Generator",
+    "DepthGeneratorTab": "Depth Generator",
+    "ErrorTab": "Error Database",
+    "InstallationTab": "Installatie",
+    "LicenseTab": "Licentie & Vermeldingen",
+    "ProjectManagerTab": "Project Manager",
+    "QuickstartTab": "snelstart",
+    "RequirementsTab": "Software Vereisten"
+  },
   "HomePage": {
     "QuickstartHeader": "SNELSTART",
     "QuickstartTitle": "Beknopte informatie voor als je binnen een paar minuten met AvantZero wilt kunnen werken",
@@ -49,5 +61,41 @@
     "ErrorDBHeader": "ERROR DATABASE",
     "ErrorDBTitle": "Database met veelvoorkomende errors en manieren om deze op te lossen",
     "ErrorDBARIA": "Klik op de knop voor een overzicht van veelvoorkomende fouten en manieren om deze op te lossen"
+  },
+  "BackgroundPage": 
+  {
+    "BGTitle": "Achtergrond pagina"
+  },
+  "DataGeneratorPage":
+  {
+    "DGTitle": "Data Generator pagina"
+  },
+  "DepthGeneratorPage":
+  {
+    "DPTitle": "Depth Generator pagina"
+  },
+  "ErrorDatabasePage":
+  {
+    "EDTitle": "Error Database pagina"
+  },
+  "InstallationPage":
+  {
+    "ISTitle": "Installatie pagina"
+  },
+  "LicenseCreditsPage":
+  {
+    "LCTitle": "Licentie en Vermeldingen pagina"
+  },
+  "ProjectManagerPage":
+  {
+    "PMTitle": "Project Manager pagina"
+  },
+  "QuickstartPage":
+  {
+    "QSTitle": "Snelstart pagina"
+  },
+  "RequirementsPage":
+  {
+    "RQTitle": "Software vereisten pagina"
   }
 }

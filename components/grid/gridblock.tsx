@@ -1,8 +1,8 @@
 "use client";
-import React, { ReactElement } from 'react';
+
+import React, { ReactElement, useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-
 
 interface GridBlockProps {
     icon?: ReactElement;
@@ -18,7 +18,6 @@ interface GridBlockProps {
     hasHover?: boolean;
     tabIndex?: 0;
 }
-
 
 const handleBackgroundColor = (choice: GridBlockProps['backgroundColor']) => {
     switch(choice) {
@@ -115,19 +114,27 @@ const GridBlock: React.FC<GridBlockProps> = ({ icon, header, backgroundColor, te
     const txtColor = handleTextColor(textColor);
     const txtFont = handleTextFont(textFont);
     const txtSize = handleTextSize(textSize);
+    const [overlayColor, setOverlayColor] = useState("bg-AVZTea/30");
+
+    useEffect(() => {
+        setOverlayColor(Math.random() < 0.5 ? "bg-AVZTea/30" : "bg-AVZRed/30");
+    }, []);
 
     return (
         <Link href={linkTo} passHref tabIndex={tabIndex}>
-            <button className={`w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} ${hasHover ? "hover:cursor-pointer" : ""}  p-6`} title={title} aria-label={ariaTitle} tabIndex={-1}>
+            <button className={`group w-full h-full mxFlexCenter rounded-sm flex-col shadow-md relative overflow-hidden ${backColor} ${txtColor} ${hasHover ? "hover:cursor-pointer" : ""}  p-6`} title={title} aria-label={ariaTitle} tabIndex={-1}>
                 {backgroundImage && (
+                    <>
                     <Image 
                         src={backgroundImage}
                         alt=""
                         fill
                         priority
-                        className='absolute inset z-0 opacity-30'
+                        className='absolute inset z-0 opacity-30 transform transition-transform duration-500 ease-in-out group-hover:scale-110'
                         style={{ objectFit: 'cover' }}
                     />
+                    <div className={`absolute inset-0 z-10 ${overlayColor} opacity-0 transform translate-y-full transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0`}></div>                    
+                    </>
                 )}
                 <section className='z-10 flex flex-col justify-center items-center'>
                     {icon && <figure className='text-4xl'>{icon}</figure>}

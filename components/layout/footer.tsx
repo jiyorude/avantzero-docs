@@ -7,12 +7,12 @@ import { IoIosSettings } from "react-icons/io";
 import { useState, useEffect } from 'react';
 import Language from '../misc/language';
 import { useTranslations } from 'next-intl';
+import { GetYear } from '../../utils/year';
 
 const Footer: React.FC = () => {
     const t = useTranslations('Footer');
-    const date = new Date();
-    const year = date.getFullYear();
     const [settings, setSettings] = useState(false);
+    const year = GetYear();
 
     useEffect(() => {
         document.body.style.overflow = settings ? 'hidden' : 'auto';

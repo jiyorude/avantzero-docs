@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import type { ReactNode } from 'react';
 import "./css/main.css";
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale} from 'next-intl/server';
 import { GetYear } from "@/utils/year";
+import Loader from "@/components/layout/loader";
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getTranslations('Tabs');
@@ -30,6 +30,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     return (
         <html lang={locale}>
             <body className="max-w-7xl flex justify-center flex-col m-auto bg-AVZWhi">
+                <Loader />
                 <NextIntlClientProvider>
                     <Header />
                         {children}

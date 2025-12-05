@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                 <IoIosSettings size={45} className='fill-AVZWhi bg-transparent size-9 opacity-90' />
             </button>
             <section className='w-16 bg-AVZRed h-14 mxFlexCenter flex-col leading-3.5 ' aria-label={t('CopyrightARIA')}>
-                <h3 className='text-AVZWhi font-AVZBla text-[12px]'>0.1.0</h3>
+                <h3 className='text-AVZWhi font-AVZBla text-[12px]'>0.2.0</h3>
                 <p className='text-AVZWhi font-AVZLight text-[10px]'>&copy; {year}</p>
             </section>
         </footer>

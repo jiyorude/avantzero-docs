@@ -33,6 +33,12 @@
     "QuickstartTab": "Quickstart",
     "RequirementsTab": "Requirements"
   },
+  "NotFound": {
+    "NotFoundTitle": "Oh no...",
+    "NotFoundHeader": "Page Not Found (404)",
+    "NotFoundPara": "You'll be re-directed back to the homepage in a few seconds",
+    "NotFoundAlt": "The 'Is This a Pigeon Meme', but used in the 404 context"
+  },
   "HomePage": {
     "QuickstartHeader": "QUICKSTART",
     "QuickstartTitle": "Concise information on getting the algorithm up and running quick!",
